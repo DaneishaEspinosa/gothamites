@@ -1,11 +1,48 @@
 <html>
 <head>
     <link rel="stylesheet" href="wireframe.css">
-    
+</head>
     <title></title>
     <body>
         <header>
+<nav aria-label="Main navigation">
+            <!-- Top row container for logo and hamburger -->
 
+            <!-- Logo on the left -->
+            <a href="index.html" class="nav-logo" aria-label="Home">
+                <div class="nav-logo-circle">LOGO</div>
+            </a>
+
+            <div class="flex-right">
+            <!-- Hamburger menu button - only visible on mobile -->
+                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
+                    <span class="sr-only">Toggle navigation menu</span>
+                </button>
+
+
+             <!-- your HTML pages go in this list-->
+                <ul id="main-nav" aria-expanded="false">
+                    <li>
+                        <a href="">
+                            Page Name 1
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                           Page Name 2
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#3">
+                           Page Name 3
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        </nav>
         </header>
         <main>
 

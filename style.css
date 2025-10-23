@@ -1,3 +1,18 @@
 p {
     color:#FFCC00;
 }
+.oculi-text {
+    font-family:"oculi-text",sans-serif;
+    font-style: medium;
+    font-size: 15px;
+}
+h1{
+    font-family:faust, sans-serif;
+    font-style:extra-bold;
+    font-size: 43px;
+}
+h2{
+    font-family:faust, sans-serif;
+    font-style:bold;
+    font-size: 33px;
+}

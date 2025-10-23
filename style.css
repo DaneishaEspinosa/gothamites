@@ -1,4 +1,4 @@
-p,h2 {
+p,h1,h2,h3 {
     color:#FFCC00;
 }
 .oculi-text {
@@ -21,9 +21,6 @@ font-weight: 900;
 font-style: normal;
 font-size: 22px;
 }
-h1 {
-    color:#471396;
-}
-background {
+body {
     background-color:#471396;
 }

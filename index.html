@@ -8,59 +8,36 @@
  <title>Gothamites</title>
 
     <body>
-        <header>
-<nav aria-label="Main navigation">
-            <!-- Top row container for logo and hamburger -->
-
-            <!-- Logo on the left -->
-            <a href="index.html" class="nav-logo" aria-label="Home">
-                <div class="nav-logo-circle">LOGO</div>
-            </a>
-
-            <div class="flex-right">
-            <!-- Hamburger menu button - only visible on mobile -->
-                <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">
-                    <span class="sr-only">Toggle navigation menu</span>
-                </button>
-
-
-             <!-- your HTML pages go in this list-->
-                <ul id="main-nav" aria-expanded="false">
-                    <li>
-                        <a href="batfamily.html">
-                            Bat Family
-                        </a>
-                    </li>
-                    <li>
-                        <a href="love-interest-graveyard.html">
-                           Love Interest Graveyard
-                        </a>
-                    </li>
-                    <li>
-                        <a href="rouge-gallery.html">
-                          Rouge Gallery
-                        </a>
-                    </li>
-
+        <header class="site-header">
+        <div class="logo"><a href="index.html">Home</a></div>
+        <div>
+            <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation menu">
+                <span class="icon" aria-hidden="true">☰</span>
+            </button>
+            <nav class="nav" id="main-nav">
+                <ul>
+                    <li><a href="batfamily.html">Bat Family</a></li>
+                    <li><a href="love-interest-graveyard.html">Love Interest Graveyard</a></li>
+                    <li><a href="rouge-gallery.html">Rouge Gallery</a></li>
                 </ul>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
-        </nav>
-        </header>
+    </header>
         <main>
 <h1>Welcome to Gothamites</h1>
 <h2>Your source for everything Gotham</h2>
 <p>This site is dedicated to Batman himself, his allies, his lovers, and his enemies!</p>
 <h2>Meet The Bat</h2>
-<img src="https://external-preview.redd.it/o4r0mUNXKb8mL221AZ2WhMJVBilFHBEUvhJ9Nt_5850.jpg?auto=webp&s=aa1b233b992e6e79fa809f4093a59ecd978096fc" alt="Batmans First appearance" width="320" height="auto">
+<img src="gothamites/img/batman-first-appear.png" alt="Batmans First appearance" width="320" height="auto">
 <p>Bruce Wayne (Batman) &ndash; First appeared in Detective Comics #27 (May 1939). Bruce Wayne is Gotham City&rsquo;s billionaire playboy, philanthropist, and heir to the Wayne family fortune. Orphaned at a young age after the murder of Thomas and Martha Wayne, Bruce dedicated his life to combating crime and preventing similar tragedies. As Batman, he operates as a nocturnal vigilante, using peak human conditioning, advanced martial arts, detective skills, and cutting-edge technology to combat Gotham&rsquo;s criminal underworld. His dual identity allows him to navigate both high society and the criminal element, blending charm and influence as Bruce Wayne with relentless focus and strategic planning as Batman. His relationships are defined by mentorship, camaraderie, and emotional complexity, including prot&eacute;g&eacute;s in the Bat-Family and romantic connections with figures like Selina Kyle, Talia al Ghul, and Zatanna. Batman maintains a strict moral code, refusing to kill while pursuing justice, making him both feared by criminals and a symbol of hope for Gotham&rsquo;s citizens.</p>
 <h2>Real Life History</h2>
 <p>Batman was created in 1939 by artist Bob Kane and writer Bill Finger, debuting in Detective Comics #27. While Kane came up with the concept, it was Finger who shaped Batman into the dark, tragic figure we know today &mdash; giving him his cowl, Gotham City, and his origin as Bruce Wayne, a man driven to fight crime after witnessing his parents&rsquo; murder. Inspired by pulp heroes like The Shadow and Zorro, Batman quickly became one of DC Comics&rsquo; most popular characters. <br /><br />During the early years, Batman stories were gritty and mysterious, but by the 1950s and 1960s they turned campy under the Comics Code Authority. The 1966 Batman TV show starring Adam West cemented this lighter image with its colorful villains and over-the-top humor. In the 1970s, writers Dennis O&rsquo;Neil and artist Neal Adams restored Batman&rsquo;s darker tone, emphasizing his detective skills and psychological depth. This shift paved the way for classic modern stories such as Frank Miller&rsquo;s The Dark Knight Returns and Year One, which redefined Batman as a brooding antihero for adult audiences. <br /><br />Batman&rsquo;s popularity exploded again with Tim Burton&rsquo;s 1989 Batman film, followed by the critically acclaimed Batman: The Animated Series in the 1990s. Then, Christopher Nolan&rsquo;s Dark Knight Trilogy (2005&ndash;2012) reinvented the character for a new generation, grounding him in realism and exploring the man behind the mask. The Dark Knight (2008) became a cultural phenomenon, winning two Oscars and setting the standard for superhero films. <br /><br />In recent years, Ben Affleck&rsquo;s portrayal in the DC Extended Universe and Robert Pattinson&rsquo;s The Batman (2022) have shown how flexible and timeless the character remains. Across more than eight decades, Batman has evolved from pulp hero to global icon &mdash; a symbol of justice, fear, and human determination that continues to inspire audiences around the world.</p>
         </main>
         <footer>
+            <img src="gothamites/img/batman-rope.png" alt="batman with rope" width="auto" height="auto">
 <p>All photos property of DC Comics.</p>
         </footer>
-        <!-- <script src="nav.js"></script> -->
+        <script src="script.js"></script>
     </body>
     </html>

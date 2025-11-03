@@ -24,3 +24,11 @@ font-size: 22px;
 body {
     background-color:#471396;
 }
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width:700px) {
+    
+}

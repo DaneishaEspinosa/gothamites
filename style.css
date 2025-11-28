@@ -29,7 +29,45 @@ body {
     display:flex;
     justify-content: flex-start;
 }
+.main-nav {
+  text-align: center;
+  margin-top: 12px;
+}
 
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin: 0 22px;
+}
+
+.main-nav a {
+  font-size: 1.05rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #FFCC00;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #FFCC00;
+  transition: width 0.2s ease;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
 
 /* MEDIA QUERIES */
 @media (min-width:700px) {

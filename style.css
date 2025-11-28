@@ -25,7 +25,10 @@ body {
     background-color:#471396;
 }
 
-
+.flex-container {
+    display:flex;
+    justify-content: flex-start;
+}
 
 
 /* MEDIA QUERIES */

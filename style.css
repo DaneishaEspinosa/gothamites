@@ -1,34 +1,78 @@
-p,h1,h2,h3 {
-    color:#FFCC00;
-}
-.oculi-text {
-    font-family:"oculi-text",sans-serif;
-    font-style: medium;
-    font-size: 16px;
-}
-h1{
-    font-family:faust, sans-serif;
-    font-style:extra-bold;
-    font-size: 43px;
-}
-h2{
-    font-family:faust, sans-serif;
-    font-style:bold;
-    font-size: 33px;
-}
-h3{
-font-weight: 900;
-font-style: normal;
-font-size: 22px;
-}
-body {
-    background-color:#471396;
+/* ---------- GLOBAL ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-.flex-container {
-    display:flex;
-    justify-content: flex-start;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #471396;
+  font-family: "oculi-text", sans-serif;
 }
+
+/* text colors + headings from your code */
+p, h1, h2, h3 {
+  color: #FFCC00;
+}
+
+.oculi-text {
+  font-family: "oculi-text", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: faust, sans-serif;
+  font-weight: 800;
+  font-size: 43px;
+}
+
+h2 {
+  font-family: faust, sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+}
+
+h3 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 22px;
+}
+
+/* ---------- PAGE WRAPPER ---------- */
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 40px 80px;
+}
+
+/* ---------- HEADER + NAV ---------- */
+
+.site-header {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* bat logo box top-left */
+.logo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFCC00;
+  padding: 10px 18px;
+  border-radius: 0 0 18px 0;
+}
+
+.logo-box img {
+  display: block;
+  max-width: 120px;
+}
+
+/* nav links across the top */
 .main-nav {
   text-align: center;
   margin-top: 12px;
@@ -36,21 +80,19 @@ body {
 
 .main-nav ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .main-nav li {
   display: inline-block;
-  margin: 0 22px;
+  margin: 0 18px;
 }
 
 .main-nav a {
-  font-size: 1.05rem;
   text-decoration: none;
-  text-transform: capitalize;
   color: #FFCC00;
-  letter-spacing: 0.03em;
+  font-size: 18px;
   position: relative;
 }
 
@@ -69,7 +111,104 @@ body {
   width: 100%;
 }
 
-/* MEDIA QUERIES */
-@media (min-width:700px) {
-    
+/* ---------- HERO TEXT ---------- */
+
+.hero {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero p {
+  margin: 4px 0;
+}
+
+/* ---------- MEET THE BAT SECTION ---------- */
+
+.meet-section {
+  margin-top: 50px;
+}
+
+/* image + text side-by-side */
+.meet-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* card behind Batman image */
+.bat-card {
+  background-color: #300277;
+  border-radius: 24px;
+  padding: 28px 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bat-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  margin-bottom: 8px;
+}
+
+.section-underline {
+  width: 120px;
+  height: 3px;
+  background-color: #FFCC00;
+  margin-bottom: 16px;
+}
+
+.meet-text p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* ---------- REAL LIFE HISTORY ---------- */
+
+.history-section {
+  margin-top: 40px;
+}
+
+.history-section p {
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* footer color from your code */
+footer {
+  background-color: #300277;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 900px) {
+  .wrapper {
+    padding: 24px 18px 60px;
+  }
+
+  .meet-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .bat-card {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-nav li {
+    display: block;
+    margin: 6px 0;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
 }
